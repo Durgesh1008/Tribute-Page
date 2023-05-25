@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            border: 2px red solid;
+            background-color: brown;
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#add").click(function () {
+                $("h1,h2,p").addClass("one");
+
+            });
+            $("#remove").click(function () {
+                $("h1,h2,p").removeClass("one")
+            });
+
+            $("#append").click(function () {
+                var item = prompt("Enter Items....")
+                $("ol").append("<li>" + item + "<li>")
+            })
+            $("#prepend").click(function () {
+                var item = prompt("Enter Items....")
+                $("ol").prepend("<li>" + item + "<li>")
+            })
+        });
+
+
+
+        function node1() {
+            var heading = document.createElement("h3");
+            var data =  prompt(document.createTextNode("G6 Student"))
+            heading.append(data)
+            var main = document.getElementById("main");
+            main.append(heading)
+        }
+
+    </script>
+</head>
+
+<body>
+    <ol>
+        <li>
+            Sweet Mango
+        </li>
+    </ol>
+    <div id="main">
+
+
+        <h1>Welcome Chitkara</h1>
+        <h2>Welcome Chitkara</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, harum magni. Soluta fugiat in repudiandae
+            aliquid
+            dolor commodi impedit officiis neque possimus aperiam, iusto nostrum inventore voluptatem illum, nulla
+            animi?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, harum magni. Soluta fugiat in repudiandae
+            aliquid
+            dolor commodi impedit officiis neque possimus aperiam, iusto nostrum inventore voluptatem illum, nulla
+            animi?
+        </p>
+    </div>
+
+
+    <button id="add" type="button">ADD CLASS</button>
+    <button id="remove" type="button">REMOVE CLASS</button>
+    <button id="append" type="button">Append</button>
+    <button id="prepend" type="button">Prepend</button>
+    <button type="button" onclick="node1()">Add heading</button>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="form.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="main" data-aos="zoom-in-right" data-aos-duration="1000">
+        <h2>Welcome :) </h2>
+    </div>
+
+    <!-- <div class="im">
+        <img src="./bc1.jpeg" alt="">
+    </div> -->
+
+    <form action="" method="" onsubmit="return check()" name="far" onsubmit="myFunc(event)">
+        
+        <label class="ll">First Name :</label><br>
+        <input type="text" id="username" name="uname" placeholder="Your Name"><br>
+        <label for="ryt" id="un" style="visibility: hidden; color:red">Please Enter Your Name</label><br><br>
+
+        <label class="ll">Email</label><br>
+        <input type="email" name="uem" id="myem" placeholder="abc@gmail.com"><br>
+        <label for="ryt" id="ue" style="visibility: hidden; color:red">Please Enter Your email</label><br><br>
+
+        <label class="ll">Mobile No</label><br>
+        <input type="tel" name="mob" id="mymo" placeholder="00000-00000"><br>
+        <label for="ryt" id="um" style="visibility: hidden; color:red">Please Enter Your email</label><br><br>
+
+        <label class="ll">Select City</label>
+        <select name="select" id="myse">
+            <option value="Select">Select City</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Madhya pradesh">Madhya pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+        </select><br><br>
+
+
+        <label class="ll">Age</label><br>
+        <input type="number" name="age" id="myage"><br>
+        <label for="ryt" id="ua" style="visibility: hidden; color:red">Please Enter Your age</label><br><br>
+
+        <div class="b">
+            <div><input type="submit" value="Tribute"></div>
+            <div class="h"><input type="reset" value="Reset"></div>
+        </div>
+
+    </form>
+
+
+    <h1 id="msg"></h1>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+<script src="./from.js"></script>
+
+</html>
